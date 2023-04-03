@@ -1,1 +1,1 @@
-a = test
+print('test')
