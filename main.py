@@ -12,7 +12,6 @@ import requests, os, threading, sys, time, random, ctypes, webbrowser,re, hashli
 import colorama
 from colorama import Fore, init, Back, Style
 from datetime import date
-import discord
 import asyncio
 import codecs
 import sys
@@ -20,7 +19,6 @@ import io
 import random
 import threading
 import requests
-import discord
 import os
 import colorama
 from discord.ext import commands
