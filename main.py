@@ -21,8 +21,7 @@ import threading
 import requests
 import os
 import colorama
-from discord.ext import commands
-from discord.ext.commands import Bot
+
  
 import pyfiglet
 from pyfiglet import Figlet
