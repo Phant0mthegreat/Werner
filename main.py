@@ -27,7 +27,6 @@ import pyfiglet
 from pyfiglet import Figlet
  
 from colorama import Fore, init
-from selenium import webdriver
 from datetime import datetime
 from itertools import cycle
  
