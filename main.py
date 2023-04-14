@@ -44,7 +44,7 @@ nc="\033[00m"
 #colors--
 
 while True:
- system("clear")
+ os.system('clear')
  print("""{cyan}
  __        __                        
  \ \      / /__ _ __ _ __   ___ _ __ 
@@ -66,7 +66,7 @@ Replit Profile: https://replit.com/@phant0m007{white}
    print("Do you want to try again? if yes, start over")
    exit(0)
  
- system('clear')
+ os.system('clear')
  print("""{cyan}
  __        __                        
  \ \      / /__ _ __ _ __   ___ _ __ 
