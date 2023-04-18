@@ -1,3 +1,4 @@
+#By Phant0m The Great
 import random 
 import colorama
 from colorama import Fore
@@ -8,7 +9,7 @@ import time
 import random
 import string
 import pathlib
-import requests, os, threading, sys, time, random, ctypes, webbrowser,re, hashlib, datetime, os.path
+import os, threading, sys, time, random, ctypes, webbrowser,re, hashlib, datetime, os.path
 import colorama
 from colorama import Fore, init, Back, Style
 from datetime import date
@@ -17,11 +18,9 @@ import codecs
 import sys
 import io
 import random
-import threading
-import requests
 import os
 import colorama
-
+import requests
  
 import pyfiglet
 from pyfiglet import Figlet
@@ -29,11 +28,27 @@ from pyfiglet import Figlet
 from colorama import Fore, init
 from datetime import datetime
 from itertools import cycle
- 
+ #colors--
+black="\033[0;30m"
+red="\033[0;31m"
+bred="\033[1;31m"
+green="\033[0;32m"
+bgreen="\033[1;32m"
+yellow="\033[0;33m"
+byellow="\033[1;33m"
+blue="\033[0;34m"
+bblue="\033[1;34m"
+purple="\033[0;35m"
+bpurple="\033[1;35m"
+cyan="\033[0;36m"
+bcyan="\033[1;36m"
+white="\033[0;37m"
+nc="\033[00m"
+#colors--
 
 while True:
  system("clear")
- print(Fore.CYAN + """
+ print(f"""{bcyan}
  __        __                        
  \ \      / /__ _ __ _ __   ___ _ __ 
   \ \ /\ / / _ \ '__| '_ \ / _ \ '__|
@@ -55,7 +70,7 @@ Replit Profile: https://replit.com/@phant0m007
    exit(0)
  
  system('clear')
- print(Fore.CYAN + """
+ print(f"""{bcyan}
  __        __                        
  \ \      / /__ _ __ _ __   ___ _ __ 
   \ \ /\ / / _ \ '__| '_ \ / _ \ '__|
@@ -69,7 +84,7 @@ Replit Profile: https://replit.com/@phant0m007
 """)
               
               
- print('_________________[TOKEN INFO]_________________')
+ print(f"""{white}_________________[TOKEN INFO]_________________""")
  headers = {'Authorization': token, 'Content-Type': 'application/json'}
  r = requests.get('https://discord.com/api/v6/users/@me', headers=headers)
  if r.status_code == 200:
