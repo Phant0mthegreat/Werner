@@ -1,33 +1,9 @@
 #By Phant0m The Great
-import random 
-import colorama
+
 from colorama import Fore
-from colorama import Style
 from os import system
-import sys
-import time
-import random
-import string
-import pathlib
-import os, threading, sys, time, random, ctypes, webbrowser,re, hashlib, datetime, os.path
-import colorama
-from colorama import Fore, init, Back, Style
-from datetime import date
-import asyncio
-import codecs
-import sys
-import io
-import random
-import os
-import colorama
 import requests
- 
-import pyfiglet
-from pyfiglet import Figlet
- 
-from colorama import Fore, init
-from datetime import datetime
-from itertools import cycle
+
  #colors--
 black="\033[0;30m"
 red="\033[0;31m"
