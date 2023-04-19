@@ -1,7 +1,7 @@
 #By Phant0m The Great
 from os import system
 import requests
- #colors--
+#colors--
 black="\033[0;30m"
 red="\033[0;31m"
 bred="\033[1;31m"
